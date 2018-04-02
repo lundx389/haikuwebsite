@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .header {
+            background-color: #333333;
+            width: 1180px;
+            height: 150px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            background-color: white;
+            position: absolute;
+            top: 15px;
+            left: 530px;
+        }
+
+        .logo:hover {
+            background-color: #777777;
+
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #722257;
+            height: 80px;
+            width: 1180px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, .5);
+        }
+
+        #navbar a {
+            display: block;
+            float: left;
+            color: white;
+            padding-top: 21px;
+            text-decoration: none;
+            font-family: Osaka, sans-serif;
+            font-size: 20pt;
+            text-shadow: 2px 2px 5px #333333;
+        }
+
+        #navbar a:hover {
+            color: #999999;
+        }
+
+        #navbar .fill_01 {
+            float: left;
+            display: block;
+            height: 80px;
+            width: 150px;
+            background-color: #722257;
+        }
+
+        #navbar .fill_02 {
+            float: left;
+            display: block;
+            height: 80px;
+            width: 282px;
+            background-color: #722257;
+        }
+
+        .footer {
+            background-color: #722257;
+            width: 1180px;
+            height: 40px;
+            position: relative;
+            left: 0px;
+        }
+
+        .content {
+
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + .content {
+            padding-top: 80px;
+        }
+
+        .sec_01 {
+            background-color: #999999;
+            width: 1020px;
+            height: 400px;
+            margin: 40px 80px;
+            text-align: center;
+            color: white;
+            padding-top: 160px;
+            font-family: Osaka, sans-serif;
+            font-size: 48pt;
+            text-shadow: 2px 2px 5px #333333;
+
+        }
+
+        .sec_02 {
+            background-color: white;
+            width: 1180px;
+            height: 130px;
+            text-align: justify;
+            color: #333333;
+            padding: 0px 80px 40px 80px;
+            font-family: Osaka, sans-serif;
+            font-size: 12pt;
+
+        }
+
+        .sec_03 {
+            background-color: darkred;
+            width: 1180px;
+            height: 560px;
+            color: white;
+            padding: 5px 80px;
+            font-family: Osaka, sans-serif;
+            font-size: 20pt;
+            text-shadow: 2px 2px 5px #333333;
+
+        }
+
+        .sec_04 {
+            background-color: white;
+            width: 1180px;
+            height: 560px;
+            text-align: justify;
+            color: #333333;
+            padding: 40px 80px 40px 80px;
+            font-family: Osaka, sans-serif;
+            font-size: 20pt;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html">
+        <div class="logo"></div>
+    </a>
+</div>
+
+<div id="navbar">
+    <div class="fill_01"></div>
+    <a href="About.html">ABOUT</a>
+    <div class="fill_02"></div>
+    <a href="javascript:void(0)">LOCATION</a>
+    <div class="fill_02"></div>
+    <a href="javascript:void(0)">MENU</a>
+    <div class="fill_01"></div>
+</div>
+
+<div class="content">
+
+    <div class="sec_01">A&nbsp;B&nbsp;O&nbsp;U&nbsp;T</div>
+
+    <div class="sec_02">Welcome to Haiku Japanese Bistro and Sushi Bar. Our newly remodeled locations
+        feature spacious dining areas, a large sushi bar for those who wish to watch their sushi being prepared, and a
+        full length bar. Whether a quick bite to eat during lunch break or dinner before your favorite opera. Haiku is a
+        traditional Japanese restaurant for all to enjoy that is home to an extensive collection of wine, beer, sake and
+        all of your favorite drinks. The bar is an excellent spot to relax and enjoy Minnesota’s night life.
+    </div>
+
+    <div class="sec_03">
+
+        <p>Follow Us</p>
+
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHaiku-Japanese-Bistro-406217622798703%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="320" height="420" style="border:none;overflow:hidden;margin-right:20px" scrolling="no" frameborder="0"
+                allowTransparency="true"></iframe>
+
+        <a href="https://instawidget.net/v/tag/haikujapanesebistro"
+           id="link-db5e0753f26f229d395641d08c11f4348ecfccbbaf2f00589b652d22c2f97fcd">#haikujapanesebistro</a>
+        <script src="https://instawidget.net/js/instawidget.js?u=db5e0753f26f229d395641d08c11f4348ecfccbbaf2f00589b652d22c2f97fcd&width=320px"></script>
+
+    </div>
+
+    <div class="sec_04">
+
+        <iframe style="float: right" src="https://www.google.com/maps/d/u/0/embed?mid=1FAc5pIMtPBIWTqXRz6oCWYM1I_uQNQmB"
+                width="680" height="480"></iframe>
+
+        <p style="margin-top: 0">Contact Us</p>
+
+        <p style="font-size: 14pt; padding-left: 40px">MINNEAPLOIS</p>
+        <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">620 Washington Ave SE</p>
+        <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Minneapolis, MN 55414</p>
+        <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">612-331-8888</p>
+
+        <h2></h2>
+
+        <p style="font-size: 14pt; padding-left: 40px">ST. PAUL</p>
+        <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">754 MN 110</p>
+        <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">St. Paul, MN 55120</p>
+        <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">651-340-1888</p>
+
+    </div>
+
+</div>
+
+<div class="footer"></div>
+
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+</body>
+</html>
