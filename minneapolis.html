@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minneapolis</title>
+    <link rel="shortcut icon" href="icon.ico" />
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .header {
+            background-color: #333333;
+            width: 1180px;
+            height: 150px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            background-color: white;
+            position: absolute;
+            top: 15px;
+            left: 530px;
+        }
+
+        .logo:hover {
+            background-color: #777777;
+
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #722257;
+            height: 80px;
+            width: 1180px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, .5);
+        }
+
+        #navbar a {
+            display: block;
+            float: left;
+            color: white;
+            padding-top: 21px;
+            text-decoration: none;
+            font-family: Osaka, sans-serif;
+            font-size: 20pt;
+            text-shadow: 2px 2px 5px #333333;
+        }
+
+        #navbar a:hover {
+            color: #999999;
+        }
+
+        #navbar .fill_01 {
+            float: left;
+            display: block;
+            height: 80px;
+            width: 150px;
+            background-color: #722257;
+        }
+
+        #navbar .fill_02 {
+            float: left;
+            display: block;
+            height: 80px;
+            width: 282px;
+            background-color: #722257;
+        }
+
+        .footer {
+            background-color: #722257;
+            width: 1180px;
+            height: 40px;
+            position: relative;
+            left: 0px;
+        }
+
+        .content {
+
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + .content {
+            padding-top: 80px;
+        }
+
+        .sec_01 {
+            background-color: #999999;
+            width: 1020px;
+            height: 400px;
+            margin: 40px 80px;
+            color: #333333;
+            padding-top: 160px;
+            font-family: Osaka, sans-serif;
+            font-size: 48pt;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html">
+        <div class="logo"></div>
+    </a>
+</div>
+
+<div id="navbar">
+    <div class="fill_01"></div>
+    <a href="About.html">ABOUT</a>
+    <div class="fill_02"></div>
+    <a href="Location.html">LOCATION</a>
+    <div class="fill_02"></div>
+    <a href="javascript:void(0)">MENU</a>
+    <div class="fill_01"></div>
+</div>
+
+<div class="content">
+
+    <div class="sec_01">
+
+        <div class="info">
+
+            <p style="font-size: 14pt; padding-left: 40px">MINNEAPLOIS</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">620 Washington Ave SE</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Minneapolis, MN 55414</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">612-331-8888</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer"></div>
+
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+</body>
+</html>
