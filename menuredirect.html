@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Location</title>
+    <link rel="shortcut icon" href="icon.ico" />
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .header {
+            background: linear-gradient(black, #333333);
+            width: 1180px;
+            height: 150px;
+        }
+
+        img:hover {
+            width: 140px;
+            height: 140px;
+            border-radius: 70px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #722257;
+            height: 80px;
+            width: 1180px;
+            box-shadow: 0 10px 5px rgba(0,0,0,.5);
+        }
+
+        #navbar a {
+            display: block;
+            float: left;
+            color: white;
+            padding-top: 21px;
+            text-decoration: none;
+            font-family: Osaka, sans-serif;
+            font-size: 20pt;
+            text-shadow: 2px 2px 5px #333333;
+        }
+
+        #navbar a:hover {
+            color: rgb(220,220,220,.5);
+        }
+
+        #navbar .fill_01 {
+            float: left;
+            display: block;
+            height: 80px;
+            width: 150px;
+            background-color: #722257;
+        }
+
+        #navbar .fill_02 {
+            float: left;
+            display: block;
+            height: 80px;
+            width: 282px;
+            background-color: #722257;
+        }
+
+        .location_01 {
+            position: fixed;
+            background-image: url("minneapolis.jpg");
+            width: 350px;
+            height: 250px;
+            margin: 75px 150px;
+            box-shadow: 0 5px 5px rgba(0,0,0,.5);
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+        .location_01:hover {
+            opacity: .6;
+        }
+
+        .location_02 {
+            position: fixed;
+            background-image: url("mendota.jpg");
+            width: 350px;
+            height: 250px;
+            margin: 75px 200px;
+            left: 480px;
+            box-shadow: 0 5px 5px rgba(0,0,0,.5);
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+        .location_02:hover {
+            opacity: .6;
+        }
+
+        .title {
+            position: fixed;
+            bottom: 120px;
+            background-color: darkred;
+            width: 350px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            padding-top: 7px;
+            font-family: Osaka, sans-serif;
+            font-size: 20pt;
+            text-shadow: 2px 2px 5px #333333;
+        }
+
+        .title a:hover {
+            color: #999999;
+        }
+
+        .title a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer {
+            background-color: #722257;
+            width: 1180px;
+            height: 40px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html">
+        <img src="Logo.png" alt="Logo" style="position: absolute; top: 8px; left: 520px; width:130px; height: 130px;">
+    </a>
+</div>
+
+<div id="navbar">
+    <div class="fill_01"></div>
+    <a href="about.html">ABOUT</a>
+    <div class="fill_02"></div>
+    <a href="location.html">LOCATION</a>
+    <div class="fill_02"></div>
+    <a href="menuredirect.html" style="color: rgb(220,220,220,.5)">MENU</a>
+    <div class="fill_01"></div>
+</div>
+
+<a href="minneapolismenu.html">
+    <div class="location_01">
+        <div class="title">MINNEAPOLIS</div>
+    </div>
+</a>
+
+<a href="mendotamenu.html">
+    <div class="location_02">
+        <div class="title">MENDOTA HEIGHTS</div>
+</div>
+</a>
+
+<div class="footer"></div>
+
+</body>
+</html>
