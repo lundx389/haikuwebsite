@@ -15,30 +15,26 @@
             font-size: 28px;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         .header {
-            background-color: #333333;
+            background: linear-gradient(black, #333333);
             width: 1180px;
             height: 150px;
         }
 
-        .logo {
-            width: 120px;
-            height: 120px;
-            border-radius: 60px;
-            background-color: white;
-            position: absolute;
-            top: 15px;
-            left: 530px;
-        }
-
-        .logo:hover {
-            background-color: #777777;
-
+        img:hover {
+            width: 140px;
+            height: 140px;
+            border-radius: 70px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
         }
 
         #navbar {
             overflow: hidden;
-            background-color: #722257;
+            background: #722257;
             height: 80px;
             width: 1180px;
             box-shadow: 0 10px 5px rgba(0, 0, 0, .5);
@@ -56,7 +52,7 @@
         }
 
         #navbar a:hover {
-            color: #999999;
+            color: rgb(220,220,220,.5);
         }
 
         #navbar .fill_01 {
@@ -98,17 +94,19 @@
         }
 
         .sec_01 {
-            background-color: #999999;
+            background-image: url("about.jpg");
             width: 1020px;
             height: 400px;
             margin: 40px 80px;
-            text-align: center;
+            text-align: right;
             color: white;
-            padding-top: 160px;
+            padding-right: 120px;
+            padding-top: 250px;
             font-family: Osaka, sans-serif;
             font-size: 48pt;
             text-shadow: 2px 2px 5px #333333;
-
+            overflow: hidden;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
         }
 
         .sec_02 {
@@ -126,13 +124,25 @@
         .sec_03 {
             background-color: darkred;
             width: 1180px;
-            height: 560px;
+            height: 600px;
             color: white;
-            padding: 5px 80px;
+            padding: 20px 80px;
             font-family: Osaka, sans-serif;
             font-size: 20pt;
             text-shadow: 2px 2px 5px #333333;
 
+        }
+
+        .blog {
+            background-color: white;
+            width: 325px;
+            height: 420px;
+            float: right;
+            color: #333333;
+            font-family: Osaka, sans-serif;
+            padding: 20px;
+            font-size: 14pt;
+            text-shadow: none;
         }
 
         .sec_04 {
@@ -152,17 +162,17 @@
 
 <div class="header">
     <a href="index.html">
-        <div class="logo"></div>
+        <img src="Logo.png" alt="Logo" style="position: absolute; top: 8px; left: 520px; width:130px; height: 130px;">
     </a>
 </div>
 
 <div id="navbar">
     <div class="fill_01"></div>
-    <a href="about.html">ABOUT</a>
+    <a href="about.html" style="color: rgb(220,220,220,.5)">ABOUT</a>
     <div class="fill_02"></div>
     <a href="location.html">LOCATION</a>
     <div class="fill_02"></div>
-    <a href="javascript:void(0)">MENU</a>
+    <a href="menuredirect.html">MENU</a>
     <div class="fill_01"></div>
 </div>
 
@@ -179,7 +189,7 @@
 
     <div class="sec_03">
 
-        <p>Follow Us</p>
+        <p style="padding-bottom: 20px">Follow Us</p>
 
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHaiku-Japanese-Bistro-406217622798703%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                 width="320" height="420" style="border:none;overflow:hidden;margin-right:20px" scrolling="no" frameborder="0"
@@ -189,6 +199,16 @@
            id="link-db5e0753f26f229d395641d08c11f4348ecfccbbaf2f00589b652d22c2f97fcd">#haikujapanesebistro</a>
         <script src="https://instawidget.net/js/instawidget.js?u=db5e0753f26f229d395641d08c11f4348ecfccbbaf2f00589b652d22c2f97fcd&width=320px"></script>
 
+        <div class="blog"> <a href="" style="color: #333333">RECENT BLOG POSTS</a>
+            <hr>
+            <a href="" style="font-size: 11pt; color: #333333">Sushi and Sustainability</a>
+            <hr>
+            <a href="" style="font-size: 11pt; color: #333333">Sushi and Food Safety</a>
+            <hr>
+            <a href="" style="font-size: 11pt; color: #333333">Difference Between Teriyaki Sauce and Soy Sauce</a>
+            <hr>
+            <a href="" style="font-size: 11pt; color: #333333">Haiku is Japanese Art</a>
+        </div>
     </div>
 
     <div class="sec_04">
@@ -198,16 +218,16 @@
 
         <p style="margin-top: 0">Contact Us</p>
 
-        <p style="font-size: 14pt; padding-left: 40px">MINNEAPLOIS</p>
+        <p style="font-size: 14pt; padding-left: 40px; padding-top: 30px">MINNEAPLOIS</p>
         <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">620 Washington Ave SE</p>
         <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Minneapolis, MN 55414</p>
         <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">612-331-8888</p>
 
         <h2></h2>
 
-        <p style="font-size: 14pt; padding-left: 40px">ST. PAUL</p>
-        <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">754 MN 110</p>
-        <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">St. Paul, MN 55120</p>
+        <p style="font-size: 14pt; padding-left: 40px; padding-top: 30px">MENDOTA HEIGHTS</p>
+        <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">754 MN State Hwy 110</p>
+        <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Mendota Heights, MN 55120</p>
         <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">651-340-1888</p>
 
     </div>
