@@ -16,24 +16,17 @@
         }
 
         .header {
-            background-color: #333333;
+            background: linear-gradient(black, #333333);
             width: 1180px;
             height: 150px;
+
         }
 
-        .logo {
-            width: 120px;
-            height: 120px;
-            border-radius: 60px;
-            background-color: white;
-            position: absolute;
-            top: 15px;
-            left: 530px;
-        }
-
-        .logo:hover {
-            background-color: #777777;
-
+        img:hover {
+            width: 140px;
+            height: 140px;
+            border-radius: 70px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
         }
 
         #navbar {
@@ -56,7 +49,7 @@
         }
 
         #navbar a:hover {
-            color: #999999;
+            color: rgb(220,220,220,.5);
         }
 
         #navbar .fill_01 {
@@ -77,26 +70,40 @@
 
         .location_01 {
             position: fixed;
-            background-color: #999999;
-            width: 300px;
+            background-image: url("minneapolis.jpg");
+            width: 350px;
             height: 250px;
-            margin: 75px 200px;
-            box-shadow: 0 10px 5px rgba(0,0,0,.5);
+            margin: 75px 150px;
+            box-shadow: 0 5px 5px rgba(0,0,0,.5);
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+        .location_01:hover {
+            opacity: .6;
         }
 
         .location_02 {
             position: fixed;
-            background-color: #999999;
-            width: 300px;
+            background-image: url("mendota.jpg");
+            width: 350px;
             height: 250px;
             margin: 75px 200px;
-            right: 0px;
-            box-shadow: 0 10px 5px rgba(0,0,0,.5);
+            left: 480px;
+            box-shadow: 0 5px 5px rgba(0,0,0,.5);
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+        .location_02:hover {
+            opacity: .6;
         }
 
         .title {
+            position: fixed;
+            bottom: 120px;
             background-color: darkred;
-            width: 300px;
+            width: 350px;
             height: 50px;
             color: white;
             text-align: center;
@@ -104,10 +111,7 @@
             font-family: Osaka, sans-serif;
             font-size: 20pt;
             text-shadow: 2px 2px 5px #333333;
-        }
-
-        .title a:hover {
-            color: #999999;
+            opacity: 1;
         }
 
         .title a {
@@ -130,7 +134,7 @@
 
 <div class="header">
     <a href="index.html">
-        <div class="logo"></div>
+        <img src="Logo.png" alt="Logo" style="position: absolute; top: 8px; left: 520px; width:130px; height: 130px;">
     </a>
 </div>
 
@@ -138,21 +142,19 @@
     <div class="fill_01"></div>
     <a href="about.html">ABOUT</a>
     <div class="fill_02"></div>
-    <a href="location.html">LOCATION</a>
+    <a href="location.html"style="color: rgb(220,220,220,.5)">LOCATION</a>
     <div class="fill_02"></div>
-    <a href="javascript:void(0)">MENU</a>
+    <a href="menuredirect.html">MENU</a>
     <div class="fill_01"></div>
 </div>
 
-<div class="location_01">
+<a href="minneapolis.html"><div class="location_01">
+    <div class="title">MINNEAPOLIS</div>
+</div></a>
 
-    <div class="title"><a href="minneapolis.html">MINNEAPOLIS</a></div>
-</div>
-
-<div class="location_02">
-
-    <div class="title"><a href="st_paul.html"> ST. PAUL</a></div>
-</div>
+<a href="mendota.html"><div class="location_02">
+    <div class="title">MENDOTA HEIGHTS</div>
+</div></a>
 
 <div class="footer"></div>
 
