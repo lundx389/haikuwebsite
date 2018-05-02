@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minneapolis</title>
+    <link rel="shortcut icon" href="icon.ico"/>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .header {
+            background: linear-gradient(black, #333333);
+            width: 1180px;
+            height: 150px;
+        }
+
+        img:hover {
+            width: 140px;
+            height: 140px;
+            border-radius: 70px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #722257;
+            height: 80px;
+            width: 1180px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, .5);
+        }
+
+        #navbar a {
+            display: block;
+            float: left;
+            color: white;
+            padding-top: 21px;
+            text-decoration: none;
+            font-family: Osaka, sans-serif;
+            font-size: 20pt;
+            text-shadow: 2px 2px 5px #333333;
+        }
+
+        #navbar a:hover {
+            color: rgb(220,220,220,.5);
+        }
+
+        #navbar .fill_01 {
+            float: left;
+            display: block;
+            height: 80px;
+            width: 150px;
+            background-color: #722257;
+        }
+
+        #navbar .fill_02 {
+            float: left;
+            display: block;
+            height: 80px;
+            width: 282px;
+            background-color: #722257;
+        }
+
+        .footer {
+            background-color: #722257;
+            width: 1180px;
+            height: 40px;
+            position: relative;
+            left: 0px;
+        }
+
+        .content {
+
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + .content {
+            padding-top: 80px;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 2px dashed white;
+            background: darkred;
+        }
+
+        .sec_01 {
+            background-image: url("mh.jpg");
+            width: 1020px;
+            height: 515px;
+            margin: 40px 80px;
+            color: #333333;
+            padding-top: 1px;
+            font-family: Osaka, sans-serif;
+            font-size: 48pt;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+
+        }
+
+        .sec_02 {
+            background-color: rgb(255, 255, 255, .7);
+            margin: 40px;
+            width: 320px;
+            height: 435px;
+            padding-top: 10px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+        }
+
+        .sec_03 {
+            background-color: darkred;
+            width: 1180px;
+            height: 380px;
+            color: white;
+            padding: 50px 60px;
+            font-family: Osaka, sans-serif;
+            font-size: 20pt;
+            text-decoration: none;
+        }
+
+        .location_01 {
+            display: inline-block;
+            background-color: white;
+            color: #333333;
+            text-decoration: none;
+            width: 485px;
+            height: 280px;
+            margin: 0 20px;
+            padding: 40px;
+            box-shadow: 0 5px 5px rgba(0,0,0,.5);
+            opacity: 1;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .title {
+            background-color: white;
+            padding: 75px;
+            width: 405px;
+            height: 200px;
+            border: 5px solid darkred;
+            text-decoration: none;
+        }
+
+        .location_01:hover {
+            opacity: .6;
+        }
+
+        .location_01 a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 2px dashed white;
+            background: darkred;
+        }
+
+        .sec_04 {
+            background-color: white;
+            border: 5px solid darkred;
+            width: 940px;
+            height: 475px;
+            text-align: justify;
+            color: #333333;
+            margin: 40px 120px;
+            font-family: Osaka, sans-serif;
+            font-size: 11pt;
+            overflow: scroll;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html">
+        <img src="Logo.png" alt="Logo" style="position: absolute; top: 8px; left: 520px; width:130px; height: 130px;">
+    </a>
+</div>
+
+<div id="navbar">
+    <div class="fill_01"></div>
+    <a href="about.html">ABOUT</a>
+    <div class="fill_02"></div>
+    <a href="location.html">LOCATION</a>
+    <div class="fill_02"></div>
+    <a href="menuredirect.html">MENU</a>
+    <div class="fill_01"></div>
+</div>
+
+<div class="content">
+
+    <div class="sec_01">
+
+        <div class="sec_02">
+            <p style="font-size: 14pt; padding-left: 40px">MENDOTA HEIGHTS</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">754 MN State Hwy 110</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Mendota Heights, MN 55120</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">651-340-1888</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">&nbsp;</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                11:00 am to 10:00 pm</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                11:00 am to 10:00 pm</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Wednesday &nbsp;&nbsp;&nbsp;
+                11:00 am to 10:00 pm</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                11:00 am to 10:00 pm</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                11:00 am to 11:00 pm</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                12:00 pm to 11:00 pm</p>
+            <p style="font-size: 11pt; padding-left: 40px; font-family: Helvetica, sans-serif">Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                12:00 pm to 10:00 pm</p>
+        </div>
+
+    </div>
+
+    <div class="sec_03">
+
+        <div class="location_01">
+            <a href="https://www.bitesquad.com/food/haiku-japanese-bistro/260" target="_blank">
+                <div class="title">Takeout</div></a>
+        </div>
+
+        <div class="location_01">
+            <a href="https://www.beyondmenu.com/33965/minneapolis/haiku-japanese-bistro-minneapolis-55414.aspx#lunch-menu" target="_blank">
+                <div class="title">Delivery</div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="sec_04">
+
+        <p style="padding: 0 40px; font-size: 14pt; color: darkred">Appetizers from Sushi Bar</p>
+        <hr>
+        <p style="padding: 0 40px">Yellowtail Jalapeno</p>
+        <p style="padding: 0 80px; font-size: 9pt">Sliced yellowtail, jalapeno, scallion, tobiko, yuzu vinegar suace</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Pepper Tuna</p>
+        <p style="padding: 0 80px; font-size: 9pt">Sliced pepper tuna with onion, scallion, tobiko, chili sauce, ponzu sauce</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Pepper White Tuna</p>
+        <p style="padding: 0 80px; font-size: 9pt">Sliced pepper white tuna with onion, scallion, tobiko, chili sauce, ponzu sauce</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Spicy Scallop Tartar</p>
+        <p style="padding: 0 80px; font-size: 9pt">Chopped scallop, mango, crunch scallion, yuzu sauce</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Sunomon</p>
+        <p style="padding: 0 80px; font-size: 9pt">Assorted raw fish, cucumber, bean sprouts, vinegar sauce</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Spicy Tuna</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Spicy Salmon</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Spicy Yellowtail Tartar</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Spicy Tuna Pizza</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Naruto</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Spicy Tuna</p>
+        <p style="padding: 0 80px; font-size: 9pt">Seared sesame tuna sliced thinly, jalapeno, ponzu sauce, truffle oil, scallion, tobiko </p>
+
+        <p style="padding: 40px 40px 0 40px; font-size: 14pt; color: darkred">Appetizers from Kitchen</p>
+        <hr>
+        <p style="padding: 0 40px">Edamame</p>
+        <p style="padding: 0 80px; font-size: 9pt">Japanese soy bean</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Squid Ginger Yaki</p>
+        <p style="padding: 0 80px; font-size: 9pt">Grilled whole squid with ginger sauce</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Rock Shrimp Tempura</p>
+        <p style="padding: 0 80px; font-size: 9pt">Butter fried shrimp served with spicy mango mayo and yuzu sauce</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Calamari</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Gyoza</p>
+        <p style="padding: 0 80px; font-size: 9pt">Pan fried japanese pork dumpling</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Vegetable Gyoza</p>
+        <p style="padding: 0 80px; font-size: 9pt">Yasa gyoza</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Spicy Salmon</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Spicy Yellowtail Tartar</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Spicy Tuna Pizza</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Naruto</p>
+        <hr style="border-bottom: 1px solid lightgray">
+        <p style="padding: 0 40px">Spicy Tuna</p>
+        <p style="padding: 0 80px; font-size: 9pt">Seared sesame tuna sliced thinly, jalapeno, ponzu sauce, truffle oil, scallion, tobiko </p>
+        <hr style="border-bottom: 1px solid lightgray">
+
+    </div>
+
+</div>
+
+<div class="footer"></div>
+
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+</body>
+</html>
